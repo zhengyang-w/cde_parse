@@ -1,0 +1,33 @@
+{
+  "name": "招募广告生成器",
+  "description": "从临床试验登记平台一键生成招募广告",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "http://www.chinadrugtrials.org.cn/*",
+    "https://www.chinadrugtrials.org.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml*",
+        "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "cde_generate.png"
+  },
+  "icons": {
+    "48": "cde_generate.png",
+    "128": "cde_generate.png"
+  }
+}

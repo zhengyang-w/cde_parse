@@ -18,7 +18,7 @@
         "http://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml*",
         "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml*"
       ],
-      "js": ["content.js"],
+      "js": ["config.js", "content.js"],
       "css": ["styles.css"]
     }
   ],
